@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykie</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nykie</h1>
+
+        <div class="navbar-links">
+          <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="Collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="Contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+
+        <p style="text-align:right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="sidenavbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="Collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="Contact.html">Contact</a></p>
+        </div>
+
+    </div>
+
+    <!--product-->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="products" id="product">
+            <div class="product-box">
+                <img src="images/img1.webp" alt="" width="200" height="300">
+                <p>White Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img2.avif" alt="" width="200" height="300">
+                <p>Black Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img3.webp" alt="" width="200" height="300">
+                <p>Baggy</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img4.webp" alt="" width="200" height="300">
+                <p>Blazer</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img5.webp" alt="" width="200" height="300">
+                <p>Sneaker</p>
+                </div>
+            <div class="product-box">
+                <img src="images/img7.webp" alt="" width="200" height="300">
+                <p>Cosmetics</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img6.jpg" alt="" width="200" height="300">
+                <p>Perfume</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img9.webp" alt="" width="200" height="300">
+                <p>Watch</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img10.webp" alt="" width="200" height="300">
+                <p>Backpacks</p>
+            </div>
+            <div class="product-box">
+                <img src="images/img11.jpg" alt="" width="200" height="300">
+                <p>Flats</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box-1">
+
+                <h2 class="HeadingText">Nykie</h2>
+
+                <p>
+                    Discover the latest fashion trends designed to match your unique style.
+                    Our collection offers premium quality, modern designs, and comfortable
+                    wear for every occasion.
+                </p>
+
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+
+                <p style="margin-top:20px;">
+                    &copy; 2026 Nykie.com. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+    <script src="collection.js"></script>
+
+</body>
+
+</html>

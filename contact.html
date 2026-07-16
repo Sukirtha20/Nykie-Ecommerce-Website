@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykie</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Nykie</h1>
+
+        <div class="navbar-links">
+             <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="Collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="Contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="side-navbar">
+
+        <p style="text-align:right;" onclick="closeNavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+           <p class="sidenavbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="Collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="Contact.html">Contact</a></p>
+        </div>
+
+    </div>
+
+<!-- Side Navbar -->
+<div class="side-navbar">
+
+    <p style="text-align:right;" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Home</a></p>
+        <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+        <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+    </div>
+
+</div>
+
+<!-- Contact Section -->
+<div class="contact" style="padding:50px;">
+
+    <h1 style="text-align:center;">Contact Us</h1>
+
+    <div style="display:flex;justify-content:space-between;gap:50px;flex-wrap:wrap;margin-top:40px;">
+
+        <!-- Contact Details -->
+        <div style="flex:1;min-width:300px;">
+            <h2>Get In Touch</h2>
+
+            <p><i class="fa-solid fa-location-dot"></i> Erode, Tamil Nadu, India</p>
+            <br>
+
+            <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+            <br>
+
+            <p><i class="fa-solid fa-envelope"></i> support@nykie.com</p>
+            <br>
+
+            <p><i class="fa-solid fa-clock"></i> Mon - Sat : 9:00 AM - 8:00 PM</p>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div style="flex:1;min-width:300px;">
+
+            <form id="contact-form">
+
+                <input type="text" placeholder="Your Name" required
+                    style="width:100%;padding:12px;margin-bottom:15px;">
+
+                <input type="email" placeholder="Your Email" required
+                    style="width:100%;padding:12px;margin-bottom:15px;">
+
+                <input type="text" placeholder="Subject"
+                    style="width:100%;padding:12px;margin-bottom:15px;">
+
+                <textarea placeholder="Message" rows="6" required
+                    style="width:100%;padding:12px;margin-bottom:15px;"></textarea>
+
+                <button type="submit"
+                    style="padding:12px 25px;background:black;color:white;border:none;border-radius:5px;cursor:pointer;">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box-1">
+
+            <h2 class="HeadingText">Nykie</h2>
+
+            <p>
+                Discover the latest fashion trends designed to match your unique style.
+                Premium quality products with modern fashion collections.
+            </p>
+
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+
+            <p style="margin-top:20px;">
+                &copy; 2026 Nykie.com. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Your message has been sent successfully.");
+    this.reset();
+});
+</script>
+
+
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+    <script src="collection.js"></script>
+
+</body>
+
+</html>
